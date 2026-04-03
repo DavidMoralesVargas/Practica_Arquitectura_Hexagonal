@@ -7,9 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="CasosDeUso\" />
-    <Folder Include="Puertos\Entrada\" />
-    <Folder Include="Puertos\Salida\" />
+    <ProjectReference Include="..\Hexagonal.Dominio\Hexagonal.Dominio.csproj" />
   </ItemGroup>
 
 </Project>

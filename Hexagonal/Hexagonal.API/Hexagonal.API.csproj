@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Hexagonal.Aplicacion\Hexagonal.Aplicacion.csproj" />
+    <ProjectReference Include="..\Hexagonal.Infraestructura\Hexagonal.Infraestructura.csproj" />
   </ItemGroup>
 
 </Project>
