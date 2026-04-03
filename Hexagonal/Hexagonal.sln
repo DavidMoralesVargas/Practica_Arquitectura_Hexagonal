@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructura", "Infraest
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{9016A4F4-1E76-474A-AB62-EBB74577F416}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.Dominio", "Hexagonal.Dominio\Hexagonal.Dominio.csproj", "{BF4299ED-7570-4D36-BBF3-93E5A867ECA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Dominio", "Hexagonal.Dominio\Hexagonal.Dominio.csproj", "{BF4299ED-7570-4D36-BBF3-93E5A867ECA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.Aplicacionn", "Hexagonal.Aplicacionn\Hexagonal.Aplicacionn.csproj", "{0863B0D3-E91E-4E8E-A6AD-4E26425642EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.Infraestructura", "Hexagonal.Infraestructura\Hexagonal.Infraestructura.csproj", "{70A68B56-B187-41F9-8769-E8E98DAE06D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.Infraestructura", "Hexagonal.Infraestructura\Hexagonal.Infraestructura.csproj", "{70A68B56-B187-41F9-8769-E8E98DAE06D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hexagonal.API", "Hexagonal.API\Hexagonal.API.csproj", "{C7225FD9-3382-4AF9-9A31-AF26BA589ED2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.API", "Hexagonal.API\Hexagonal.API.csproj", "{C7225FD9-3382-4AF9-9A31-AF26BA589ED2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hexagonal.Aplicacion", "Hexagonal.Aplicacion\Hexagonal.Aplicacion.csproj", "{6FC99ED0-62FB-4B3E-A3E1-D02E8A8F1A3A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,6 @@ Global
 		{BF4299ED-7570-4D36-BBF3-93E5A867ECA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF4299ED-7570-4D36-BBF3-93E5A867ECA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF4299ED-7570-4D36-BBF3-93E5A867ECA1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0863B0D3-E91E-4E8E-A6AD-4E26425642EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0863B0D3-E91E-4E8E-A6AD-4E26425642EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0863B0D3-E91E-4E8E-A6AD-4E26425642EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0863B0D3-E91E-4E8E-A6AD-4E26425642EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{70A68B56-B187-41F9-8769-E8E98DAE06D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{70A68B56-B187-41F9-8769-E8E98DAE06D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70A68B56-B187-41F9-8769-E8E98DAE06D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,15 +37,19 @@ Global
 		{C7225FD9-3382-4AF9-9A31-AF26BA589ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7225FD9-3382-4AF9-9A31-AF26BA589ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7225FD9-3382-4AF9-9A31-AF26BA589ED2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC99ED0-62FB-4B3E-A3E1-D02E8A8F1A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC99ED0-62FB-4B3E-A3E1-D02E8A8F1A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC99ED0-62FB-4B3E-A3E1-D02E8A8F1A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC99ED0-62FB-4B3E-A3E1-D02E8A8F1A3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BF4299ED-7570-4D36-BBF3-93E5A867ECA1} = {EF1AB7F6-73F8-4FD7-9A21-A8D3364A0C14}
-		{0863B0D3-E91E-4E8E-A6AD-4E26425642EE} = {DC149BB7-7B8F-4EB1-9B7B-A41F840A5223}
 		{70A68B56-B187-41F9-8769-E8E98DAE06D6} = {CF9F4DFB-46ED-4C13-9EDB-AA1B75B23541}
 		{C7225FD9-3382-4AF9-9A31-AF26BA589ED2} = {9016A4F4-1E76-474A-AB62-EBB74577F416}
+		{6FC99ED0-62FB-4B3E-A3E1-D02E8A8F1A3A} = {DC149BB7-7B8F-4EB1-9B7B-A41F840A5223}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {07990BE3-1CA9-4257-9372-1B66A5D86BFF}
