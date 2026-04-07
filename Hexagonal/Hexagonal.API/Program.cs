@@ -2,6 +2,7 @@ using Hexagonal.Aplicacion.CasosDeUso;
 using Hexagonal.Aplicacion.Puertos.Entrada;
 using Hexagonal.Aplicacion.Puertos.Salida;
 using Hexagonal.Infraestructura.Persistencia;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +13,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<ICrearProductoCasoUso, CrearProductoCasoUso>();
-builder.Services.AddScoped<IProductoRepositorio, ProductoRepositorio>();
+builder.Services.AddDbContext<Hexagonal.Infraestructura.Persistencia.AppContext>(x => x.UseSqlServer("name=DockerConnection"));
+
+//builder.Services.AddScoped<ICrearProductoCasoUso, CrearProductoCasoUso>();
+//builder.Services.AddScoped<IProductoRepositorio, ProductoRepositorio>();
+
+builder.Services.AddScoped<ICrearProductoCasoUso, CrearProductoCasoUsoEF>();
+builder.Services.AddScoped<IProductoRepositorio, ProductoRepositorioEF>();
 
 var app = builder.Build();
 
