@@ -6,7 +6,7 @@ namespace Hexagonal.Infraestructura.Persistencia
 {
     public class ProductoRepositorio : IProductoRepositorio
     {
-        private string connectionString = "Server=Dacanad;Database=Hexagonal;Encrypt=False;User Id=super;Password=Ballena738738..;";
+        private string connectionString = "Server=[Servidor];Database=Hexagonal;Encrypt=False;User Id=[Usuario];Password=[Contra];";
 
 
         public void AgregarProducto(string Nombre, string Descripcion, decimal Precio, int Stock)
